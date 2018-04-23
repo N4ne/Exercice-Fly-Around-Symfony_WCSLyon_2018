@@ -7,6 +7,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Isavailable</th>
                 <th>Model</th>
                 <th>Manufacturer</th>
                 <th>Cruisespeed</th>
@@ -18,6 +19,7 @@
         {% for planeModel in planeModels %}
             <tr>
                 <td><a href="{{ path('planemodel_show', { 'id': planeModel.id }) }}">{{ planeModel.id }}</a></td>
+                <td>{% if planeModel.isAvailable %}Yes{% else %}No{% endif %}</td>
                 <td>{{ planeModel.model }}</td>
                 <td>{{ planeModel.manufacturer }}</td>
                 <td>{{ planeModel.cruiseSpeed }}</td>
