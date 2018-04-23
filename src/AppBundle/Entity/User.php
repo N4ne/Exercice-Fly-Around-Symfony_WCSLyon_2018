@@ -276,7 +276,7 @@ class User
      */
     public function getIsCertifiedPilot()
     {
-        return $this->isCertifiedPilot;
+        return $this->isACertifiedPilot;
     }
     /**
      * Constructor
