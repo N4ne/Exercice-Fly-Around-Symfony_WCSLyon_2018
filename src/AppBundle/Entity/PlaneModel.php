@@ -217,4 +217,28 @@ class PlaneModel
     {
         return $this->planes;
     }
+
+    /**
+     * Set isAvailable
+     *
+     * @param boolean $isAvailable
+     *
+     * @return PlaneModel
+     */
+    public function setIsAvailable($isAvailable)
+    {
+        $this->isAvailable = $isAvailable;
+
+        return $this;
+    }
+
+    /**
+     * Get isAvailable
+     *
+     * @return boolean
+     */
+    public function getIsAvailable()
+    {
+        return $this->isAvailable;
+    }
 }

@@ -389,4 +389,28 @@ class User
     {
         return $this->passengers;
     }
+
+    /**
+     * Set isACertifiedPilot
+     *
+     * @param boolean $isACertifiedPilot
+     *
+     * @return User
+     */
+    public function setIsACertifiedPilot($isACertifiedPilot)
+    {
+        $this->isACertifiedPilot = $isACertifiedPilot;
+
+        return $this;
+    }
+
+    /**
+     * Get isACertifiedPilot
+     *
+     * @return boolean
+     */
+    public function getIsACertifiedPilot()
+    {
+        return $this->isACertifiedPilot;
+    }
 }
