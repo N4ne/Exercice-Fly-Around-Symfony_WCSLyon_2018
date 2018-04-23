@@ -36,6 +36,13 @@ class PlaneModel
     private $id;
 
     /**
+     * @var bool
+     *
+     * @ORM\Column(name="isAvailable", type="boolean")
+     */
+    private $isAvailable;
+    
+    /**
      * @var string
      *
      * @ORM\Column(name="model", type="string", length=128)

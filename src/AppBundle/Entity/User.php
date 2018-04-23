@@ -96,9 +96,9 @@ class User
     /**
      * @var bool
      *
-     * @ORM\Column(name="isCertifiedPilot", type="boolean")
+     * @ORM\Column(name="isACertifiedPilot", type="boolean")
      */
-    private $isCertifiedPilot;
+    private $isACertifiedPilot;
 
 
     /**
